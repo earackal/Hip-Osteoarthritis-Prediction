@@ -1,7 +1,13 @@
 # Project Code
-In our thesis, we wanted to build a deep-learning-based pipeline that locates the hip 
-joints in an anterior-posterior radiograph of the pelvis. Furthermore, the pipeline 
-should predict for the localised joints the Kellgren-Lawrence grades.
+Hip osteoarthritis is a disease that leads to the degeneration of the hip joint cartilage.
+Consequently, affected patients experience pain and difficulty performing everyday activities.
+For this reason, it is important to detect osteoarthritis at an early stage so that effective
+treatment can be initiated. In this master’s thesis, we wanted to build a deep learning based 
+pipeline that predicts the Kellgren-Lawrence grades for hip joints in an X-ray image.
+For this purpose, we worked with the CHECK and OI datasets. The pipeline consisted
+of a Faster R-CNN to localise the joints and a DenseNet-121 to predict the stage. The
+Kellgren-Lawrence grading system is defined by the presence and stage of osteoarthritis
+features. Therefore, we trained CNN models to first predict the severity of selected features.
 
 This repository contains the code that we used during the project. This repository
 consists of two folders: Experiment and Object_Detection. In the Object_Detection
